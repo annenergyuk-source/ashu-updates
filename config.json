@@ -7,18 +7,17 @@
     { "label": "📶 WiFi settings","action": "intent","value": "android.settings.WIFI_SETTINGS||" }
   ],
   "skills": [
-    { "trigger": "who made you", "action": "say", "value": "I am Ashu, built by my owner." },
-    { "trigger": "latest news",      "action": "search", "value": "latest news today" },
-    { "trigger": "today's headlines","action": "url",    "value": "https://news.google.com" },
-    { "trigger": "be quiet",         "action": "say",    "value": "Okay." },
-    { "trigger": "who made you",     "action": "say",    "value": "I am Ashu." }
+    { "trigger": "who made you",      "action": "say",    "value": "I am Ashu, built by my owner." },
+    { "trigger": "latest news",       "action": "search", "value": "latest news today" },
+    { "trigger": "today's headlines", "action": "url",    "value": "https://news.google.com" },
+    { "trigger": "be quiet",          "action": "say",    "value": "Okay." },
     {
       "trigger": "open instagram and post",
       "actions": [
-        { "type": "intent", "value": "com.instagram.android" },
-        { "type": "delay", "value": "2500" },
+        { "type": "intent",        "value": "com.instagram.android" },
+        { "type": "delay",         "value": "2500" },
         { "type": "click_ui_text", "value": "New post" },
-        { "type": "delay", "value": "1500" },
+        { "type": "delay",         "value": "1500" },
         { "type": "click_ui_text", "value": "Next" }
       ]
     },
@@ -26,9 +25,9 @@
       "trigger": "browse instagram",
       "actions": [
         { "type": "intent", "value": "com.instagram.android" },
-        { "type": "delay", "value": "2500" },
+        { "type": "delay",  "value": "2500" },
         { "type": "scroll", "value": "" },
-        { "type": "delay", "value": "3000" },
+        { "type": "delay",  "value": "3000" },
         { "type": "scroll", "value": "" }
       ]
     }
