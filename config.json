@@ -8,6 +8,10 @@
   ],
   "skills": [
     { "trigger": "who made you", "action": "say", "value": "I am Ashu, built by my owner." },
+    { "trigger": "latest news",      "action": "search", "value": "latest news today" },
+    { "trigger": "today's headlines","action": "url",    "value": "https://news.google.com" },
+    { "trigger": "be quiet",         "action": "say",    "value": "Okay." },
+    { "trigger": "who made you",     "action": "say",    "value": "I am Ashu." }
     {
       "trigger": "open instagram and post",
       "actions": [
