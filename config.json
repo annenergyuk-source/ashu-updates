@@ -11,7 +11,7 @@
     { "trigger": "latest news",       "action": "search", "value": "latest news today" },
     { "trigger": "today's headlines", "action": "url",    "value": "https://news.google.com" },
     { "trigger": "be quiet",          "action": "say",    "value": "Okay." },
-    { "trigger": "one", "action": "url", "value": "https://wa.me/917489823806?text=JEC%20Immam%20A.I.%20Junior" },
+    { "trigger": "text imam", "action": "url", "value": "https://wa.me/917489823806?text=JEC%20Immam%20A.I.%20Junior" },
     { "trigger": "open notes", "actions": [ { "type": "intent", "value": "com.samsung.android.app.notes" }, { "type": "delay", "value": "2500" }, { "type": "click_ui_text", "value": "Add" }, { "type": "delay", "value": "1500" }, { "type": "intent", "value": "android.settings.VOICE_INPUT_SETTINGS||" } ] },
     {
       "trigger": "open instagram and post",
