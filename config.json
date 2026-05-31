@@ -31,6 +31,17 @@
         { "type": "intent", "value": "android.settings.VOICE_INPUT_SETTINGS||" } 
       ] 
     },
+
+    { 
+      "trigger": "open take notes", 
+      "actions": [ 
+        { "type": "intent", "value": "com.samsung.android.app.notes" }, 
+        { "type": "delay", "value": "2000" }, 
+        { "type": "click_ui_text", "value": "Add" }, 
+        { "type": "delay", "value": "1500" }, 
+        { "type": "intent", "value": "android.speech.action.RECOGNIZE_SPEECH||" } 
+      ] 
+    },
     
     {
       "trigger": "open instagram and post",
@@ -98,6 +109,66 @@
       "trigger": "power electronics market update",
       "action": "search",
       "value": "latest news on power electronics failures in solar farms, wind turbines, HVDC lines, and EV chargers"
+    },
+
+    {
+      "trigger": "load features",
+      "action": "say",
+      "value": "Loading advanced features. Investor outreach, CFO financial models, and power electronics market tracking modules are now fully operational."
+    },
+
+    {
+      "trigger": "open google",
+      "action": "intent",
+      "value": "com.google.android.googlequicksearchbox"
+    },
+
+    {
+      "trigger": "open calculator",
+      "action": "intent",
+      "value": "com.sec.android.app.popupcalculator"
+    },
+
+    {
+      "trigger": "open calendar",
+      "action": "intent",
+      "value": "com.samsung.android.calendar"
+    },
+
+    {
+      "trigger": "open gallery",
+      "action": "intent",
+      "value": "com.sec.android.gallery3d"
+    },
+
+    {
+      "trigger": "open clock",
+      "action": "intent",
+      "value": "com.sec.android.app.clockpackage"
+    },
+
+    {
+      "trigger": "open settings",
+      "action": "intent",
+      "value": "com.android.settings"
+    },
+
+    {
+      "trigger": "open maps",
+      "action": "intent",
+      "value": "com.google.android.apps.maps"
+    },
+
+    {
+      "trigger": "open whatsapp",
+      "action": "intent",
+      "value": "com.whatsapp"
+    },
+
+    {
+      "trigger": "open youtube app",
+      "action": "intent",
+      "value": "com.google.android.youtube"
     }
   ]
 }
