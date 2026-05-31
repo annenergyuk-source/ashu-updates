@@ -1,0 +1,4 @@
+[
+     { "trigger": "open youtube", "action": "url", "value": "https://youtube.com" },
+     { "trigger": "who made you", "action": "say", "value": "I am Ashu, built by my owner." }
+   ]
