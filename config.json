@@ -1,40 +1,103 @@
 {
-  "greeting": "Ready when you are.",
+  "greeting": "Ready when you are, CEO. Systems are online.",
   "voice": "uk",
   "buttons": [
-    { "label": "📰 News brief",   "action": "ask",   "value": "Give me a 4 sentence world news brief" },
-    { "label": "🌐 Open YouTube", "action": "url",   "value": "https://youtube.com" },
-    { "label": "📶 WiFi settings","action": "intent","value": "android.settings.WIFI_SETTINGS||" }
+    { "label": "📰 Business News", "action": "url", "value": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" },
+    { "label": "💼 Investor Pitch", "action": "ask", "value": "Give me a 4-line highly professional investor pitch for ANN.energy. Emphasize that something big is coming up to disrupt the market, focusing on power electronics failures across solar farms, wind turbines, battery sites, HVDC lines, and EV chargers. Ensure it is convincing based on facts." },
+    { "label": "📊 CFO Financials", "action": "ask", "value": "Provide a brief, structured summary of the gain pricing model for ANN.energy, highlighting the 10% gain percent of total loss saved." },
+    { "label": "🌐 Open YouTube", "action": "url", "value": "https://youtube.com" },
+    { "label": "📶 WiFi Settings", "action": "intent", "value": "android.settings.WIFI_SETTINGS||" }
   ],
   "skills": [
-    { "trigger": "who made you",      "action": "say",    "value": "I am Ashu, built by my owner." },
-    { "trigger": "latest news",       "action": "search", "value": "latest news today" },
-    { "trigger": "today's headlines", "action": "url",    "value": "https://news.google.com" },
-    { "trigger": "today's business", "action": "url",    "value": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" },
-    { "trigger": "be quiet",          "action": "say",    "value": "Okay." },
+    { "trigger": "who made you", "action": "say", "value": "I am Ashu, built by my owner." },
+    { "trigger": "latest news", "action": "search", "value": "latest news today" },
+    { "trigger": "today's headlines", "action": "url", "value": "https://news.google.com" },
+    { "trigger": "today's business", "action": "url", "value": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" },
+    { "trigger": "be quiet", "action": "say", "value": "Standing by." },
+    
     { 
       "trigger": "text imam",
-      "action": "url", "value": "https://wa.me/917489823806?text=JEC%20Immam%20A.I.%20Junior" },
-    { "trigger": "open notes", "actions": [ { "type": "intent", "value": "com.samsung.android.app.notes" }, { "type": "delay", "value": "2500" }, { "type": "click_ui_text", "value": "Add" }, { "type": "delay", "value": "1500" }, { "type": "intent", "value": "android.settings.VOICE_INPUT_SETTINGS||" } ] },
+      "action": "url", 
+      "value": "https://api.whatsapp.com/send/?phone=917489823806&text=JEC+Immam+A.I.+Junior&type=phone_number&app_absent=0" 
+    },
+    
+    { 
+      "trigger": "open notes", 
+      "actions": [ 
+        { "type": "intent", "value": "com.samsung.android.app.notes" }, 
+        { "type": "delay", "value": "2500" }, 
+        { "type": "click_ui_text", "value": "Add" }, 
+        { "type": "delay", "value": "1500" }, 
+        { "type": "intent", "value": "android.settings.VOICE_INPUT_SETTINGS||" } 
+      ] 
+    },
+    
     {
       "trigger": "open instagram and post",
       "actions": [
-        { "type": "intent",        "value": "com.instagram.android" },
-        { "type": "delay",         "value": "2500" },
+        { "type": "intent", "value": "com.instagram.android" },
+        { "type": "delay", "value": "2500" },
         { "type": "click_ui_text", "value": "New post" },
-        { "type": "delay",         "value": "1500" },
+        { "type": "delay", "value": "1500" },
         { "type": "click_ui_text", "value": "Next" }
       ]
     },
+    
     {
       "trigger": "browse instagram",
       "actions": [
         { "type": "intent", "value": "com.instagram.android" },
-        { "type": "delay",  "value": "2500" },
+        { "type": "delay", "value": "2500" },
         { "type": "scroll", "value": "" },
-        { "type": "delay",  "value": "3000" },
+        { "type": "delay", "value": "3000" },
         { "type": "scroll", "value": "" }
       ]
+    },
+
+    {
+      "trigger": "investor outreach",
+      "actions": [
+        { "type": "intent", "value": "com.linkedin.android" },
+        { "type": "delay", "value": "3000" },
+        { "type": "click_ui_text", "value": "Search" },
+        { "type": "delay", "value": "1500" },
+        { "type": "say", "value": "Opening LinkedIn. Ready to search for YC founders and local Scotland investors." }
+      ]
+    },
+
+    {
+      "trigger": "email scottish power",
+      "actions": [
+        { "type": "intent", "value": "com.google.android.gm" },
+        { "type": "delay", "value": "2500" },
+        { "type": "click_ui_text", "value": "Compose" },
+        { "type": "delay", "value": "1000" },
+        { "type": "say", "value": "Drafting email. Remember to keep it to two paragraphs and explicitly state that all numbers are an estimation based on research-backed public data." }
+      ]
+    },
+
+    {
+      "trigger": "generate cfo pack",
+      "actions": [
+        { "type": "say", "value": "Preparing to execute Python reportlab script for the A4 CFO financial model pack." },
+        { "type": "delay", "value": "1000" },
+        { "type": "intent", "value": "com.termux" }
+      ]
+    },
+
+    {
+      "trigger": "check outfit",
+      "actions": [
+        { "type": "intent", "value": "android.media.action.IMAGE_CAPTURE" },
+        { "type": "delay", "value": "2000" },
+        { "type": "say", "value": "Camera open. Ensure your black casual coat is wrinkle-free and your color combinations are set for today's networking." }
+      ]
+    },
+
+    {
+      "trigger": "power electronics market update",
+      "action": "search",
+      "value": "latest news on power electronics failures in solar farms, wind turbines, HVDC lines, and EV chargers"
     }
   ]
 }
