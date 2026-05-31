@@ -10,6 +10,7 @@
     { "trigger": "who made you",      "action": "say",    "value": "I am Ashu, built by my owner." },
     { "trigger": "latest news",       "action": "search", "value": "latest news today" },
     { "trigger": "today's headlines", "action": "url",    "value": "https://news.google.com" },
+    { "trigger": "today's business", "action": "url",    "value": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen" },
     { "trigger": "be quiet",          "action": "say",    "value": "Okay." },
     { 
       "trigger": "text imam",
