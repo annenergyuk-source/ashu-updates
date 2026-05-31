@@ -1,0 +1,32 @@
+{
+  "greeting": "Ready when you are.",
+  "voice": "uk",
+  "buttons": [
+    { "label": "📰 News brief",   "action": "ask",   "value": "Give me a 4 sentence world news brief" },
+    { "label": "🌐 Open YouTube", "action": "url",   "value": "https://youtube.com" },
+    { "label": "📶 WiFi settings","action": "intent","value": "android.settings.WIFI_SETTINGS||" }
+  ],
+  "skills": [
+    { "trigger": "who made you", "action": "say", "value": "I am Ashu, built by my owner." },
+    {
+      "trigger": "open instagram and post",
+      "actions": [
+        { "type": "intent", "value": "com.instagram.android" },
+        { "type": "delay", "value": "2500" },
+        { "type": "click_ui_text", "value": "New post" },
+        { "type": "delay", "value": "1500" },
+        { "type": "click_ui_text", "value": "Next" }
+      ]
+    },
+    {
+      "trigger": "browse instagram",
+      "actions": [
+        { "type": "intent", "value": "com.instagram.android" },
+        { "type": "delay", "value": "2500" },
+        { "type": "scroll", "value": "" },
+        { "type": "delay", "value": "3000" },
+        { "type": "scroll", "value": "" }
+      ]
+    }
+  ]
+}
